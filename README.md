@@ -3,6 +3,8 @@
 
 目前只加了一个空气质量查询的功能,后面还会再加其它的
 
+[预览图片](https://github.com/yll2wcf/wechat-weapp-lifeTools/blob/master/1.gif?raw=true)
+
 详细的描述稍后补充上来。
 
 
