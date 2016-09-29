@@ -60,9 +60,10 @@ Page( {
       },
       //无论成功与失败,loading都取消
       complete: function() {
+        console.log("complete")
         that.setData( {
           loading: false,
-          disable:false
+          disabled:false
         })
       }
     });
