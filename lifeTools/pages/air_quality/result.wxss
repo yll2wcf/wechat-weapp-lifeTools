@@ -38,10 +38,10 @@ h1 {color: blue;}
 2、如果优先级相同，则选择最后出现的样式。
 3、继承得到的样式的优先级最低。
 
-当前位置由于 class page中指定了font-size 标签优先级不如class高, 所以不生效
+虽然当前位置由于 class page中指定了font-size 标签优先级不如class高, 但是原则一 继承不如指定,所以34rpx生效
 */
 text {
     margin-bottom:10rpx;
-    font-size: 50 rpx;
+    font-size: 34rpx;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }

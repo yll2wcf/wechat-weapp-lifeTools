@@ -20,7 +20,8 @@ Page( {
   search: function( e ) {
     //查询按钮
     this.setData( {
-      loading: true
+      loading: true,
+      disabled:true
     });
     let that = this;//保留page函数中object的引用
     //联网
@@ -37,7 +38,8 @@ Page( {
       success: function( res ) {
         console.log( res.data );
         if( res.data.errNum === 0 ) { //成功
-          wx.navigateTo( {  //跳转地址可以写相对路径,绝对路径一定要以/ 开头 这样写pages/air_quality/result是错误的
+        //跳转地址可以写相对路径,绝对路径一定要以/ 开头 这样写pages/air_quality/result是错误的
+          wx.navigateTo( {  
             url:util.createURL( "./result", res.data.retData),
           });
         }else{
@@ -59,7 +61,8 @@ Page( {
       //无论成功与失败,loading都取消
       complete: function() {
         that.setData( {
-          loading: false
+          loading: false,
+          disable:false
         })
       }
     });
